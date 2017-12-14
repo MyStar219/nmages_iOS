@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:nmags.com</string>
+		<string>applinks:www.nmags.com</string>
+		<string>applinks:*.nmags.com</string>
+		<string>applinks:f985d.app.goo.gl</string>
+	</array>
+</dict>
+</plist>

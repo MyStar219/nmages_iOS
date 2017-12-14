@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0d6eff2e-d2a0-49d5-ae12-89ec6607a924",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "0d6eff2e-d2a0-49d5-ae12-89ec6607a924" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0d6eff2e-d2a0-49d5-ae12-89ec6607a924" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C284982F-5BB3-4EE9-9D90-B6EA4462CCF3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0d6eff2e-d2a0-49d5-ae12-89ec6607a924" : "negotiator_magazine\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "negotiator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/negotiator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.creatio.com.au\/projects\/negotiator_magazine",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0d6eff2e-d2a0-49d5-ae12-89ec6607a924"
+    }
+  ]
+}

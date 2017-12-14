@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoController">
+            <connections>
+                <outlet property="_aboutNegotiatorBtn" destination="34" id="60"/>
+                <outlet property="_advertisingBtn" destination="39" id="61"/>
+                <outlet property="_facebookBtn" destination="35" id="62"/>
+                <outlet property="_feedbackBtn" destination="38" id="63"/>
+                <outlet property="_twitterBtn" destination="36" id="65"/>
+                <outlet property="_websiteBtn" destination="37" id="66"/>
+                <outlet property="view" destination="41" id="59"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="41">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="info_bkgd.png" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="navLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="66" y="0.0" width="243" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="OBM-yR-4nh"/>
+                        <constraint firstAttribute="width" constant="243" id="SlH-RJ-Aq1"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
+                    <rect key="frame" x="36" y="98" width="302" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="PND-BV-DdJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="           About Negotiator" backgroundImage="table_bkgdTop.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToAboutNegotiator:" destination="-1" eventType="touchUpInside" id="49"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="36" y="136" width="302" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="OR2-JW-AfE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="           Visit Us on Facebook" backgroundImage="table_bkgdMiddle.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToFacebook:" destination="-1" eventType="touchUpInside" id="52"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                    <rect key="frame" x="36" y="174" width="302" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="C9n-eK-cRa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="           Follow Us on Twitter" backgroundImage="table_bkgdMiddle.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToTwitter:" destination="-1" eventType="touchUpInside" id="55"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37">
+                    <rect key="frame" x="36" y="212" width="302" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="RdP-q3-DOL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="           Visit our Website" backgroundImage="table_bkgdMiddle.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToWebsite:" destination="-1" eventType="touchUpInside" id="56"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38">
+                    <rect key="frame" x="36" y="250" width="302" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="cP7-wu-QFa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="           Give Us Feedback" backgroundImage="table_bkgdMiddle.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToFeedback:" destination="-1" eventType="touchUpInside" id="53"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39">
+                    <rect key="frame" x="36" y="288" width="302" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="TP3-7p-Q7l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="           Advertising Opportunities" backgroundImage="table_bkgdBottom.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToAdvertising:" destination="-1" eventType="touchUpInside" id="51"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="aboutNegociator_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="42">
+                    <rect key="frame" x="47" y="105" width="24" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="facebook_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="43">
+                    <rect key="frame" x="47" y="143" width="24" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="twitter_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="44">
+                    <rect key="frame" x="47" y="181" width="24" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="website_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="45">
+                    <rect key="frame" x="47" y="219" width="24" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="feedback_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="46">
+                    <rect key="frame" x="47" y="257" width="24" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="advertising_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="47">
+                    <rect key="frame" x="47" y="295" width="24" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="35" secondAttribute="trailing" constant="37" id="0m8-0m-tLN"/>
+                <constraint firstAttribute="trailing" secondItem="38" secondAttribute="trailing" constant="37" id="3zb-qw-BJT"/>
+                <constraint firstItem="38" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="160" id="Aa1-tE-uex"/>
+                <constraint firstItem="38" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="36" id="Bmg-LT-hpb"/>
+                <constraint firstItem="39" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="198" id="NdL-8n-3cT"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="46" id="OSv-bR-Yzb"/>
+                <constraint firstItem="36" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="36" id="RRt-tU-AO2"/>
+                <constraint firstAttribute="trailing" secondItem="36" secondAttribute="trailing" constant="37" id="Wyw-GU-1C9"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="36" id="agP-Si-vxa"/>
+                <constraint firstItem="37" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="36" id="cpx-jh-MNP"/>
+                <constraint firstAttribute="trailing" secondItem="39" secondAttribute="trailing" constant="37" id="d7D-va-WC7"/>
+                <constraint firstItem="39" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="36" id="e9P-ma-hTd"/>
+                <constraint firstItem="37" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="122" id="eGP-QE-PJv"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="41" secondAttribute="top" id="eUX-0o-Bg4"/>
+                <constraint firstItem="34" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="36" id="f7f-8x-oux"/>
+                <constraint firstItem="9" firstAttribute="centerX" secondItem="41" secondAttribute="centerX" id="fiX-ae-Y2S"/>
+                <constraint firstItem="36" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="84" id="liG-pF-jA3"/>
+                <constraint firstAttribute="trailing" secondItem="37" secondAttribute="trailing" constant="37" id="sIo-Oz-PZv"/>
+                <constraint firstAttribute="trailing" secondItem="34" secondAttribute="trailing" constant="37" id="vkE-uc-T58"/>
+                <constraint firstItem="34" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="8" id="xWy-e8-EaD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutNegociator_icon.png" width="24" height="24"/>
+        <image name="advertising_icon.png" width="24" height="24"/>
+        <image name="facebook_icon.png" width="24" height="24"/>
+        <image name="feedback_icon.png" width="24" height="24"/>
+        <image name="info_bkgd.png" width="320" height="480"/>
+        <image name="navLogo" width="2068" height="590"/>
+        <image name="table_bkgdBottom.png" width="302" height="41"/>
+        <image name="table_bkgdMiddle.png" width="302" height="37"/>
+        <image name="table_bkgdTop.png" width="302" height="39"/>
+        <image name="twitter_icon.png" width="24" height="24"/>
+        <image name="website_icon.png" width="24" height="24"/>
+    </resources>
+</document>

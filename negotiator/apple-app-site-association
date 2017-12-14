@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+                    "appID": "877UZ32PVY.com.Aplome.negotiator",
+                    "paths": ["/*", "NOT /otherpage/*", "NOT /contact-us", "NOT /testimonials-information", "NOT /reader-testimonials"]
+                    }]
+    }
+    
+}

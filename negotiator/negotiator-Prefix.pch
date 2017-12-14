@@ -1,0 +1,60 @@
+//
+// Prefix header for all source files of the 'negotiator' target in the 'negotiator' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <UIImageView+UIActivityIndicatorForSDWebImage.h>
+#import "UINavigationBar-Additions.h"
+#import "UIApplication-Additions.h"
+#import "UIAlertController+Window.h"
+#import "UIColor-Additions.h"
+#import "NSString-Additions.h"
+#import "MKMapView-Additions.h"
+#import "JSON.h"
+#import "MainController.h"
+#import "LocationUtiliy.h"
+#import "UIDevice-Additions.h"
+#endif
+
+#define APP_NAME            @"Negotiator"
+
+//#define SERVER_URL            @"localhost:8888/NegotiatorFrontend"
+//#define SERVER_URL              @"nmagsstaging.creatio.com.au"//@"www.nmags.com"
+#define SERVER_URL              @"www.nmags.com"
+#define VERSION_NUMBER          @"1.0.0"
+
+#define FACEBOOK_URL            @"https://www.facebook.com/NegotiatorMagazine/135370159818331"
+#define LIKE_US_FACEBOOK_URL    @"http://www.facebook.com/pages/Negotiator-­Magazine/135370159818331"
+#define FOLLOW_US_TWITTER_URL   @"http://twitter.com/neg_mags"
+#define WEBSITE_URL             @"http://www.nmags.com/"
+#define EMAIL_ADDRESS           @"sales@nmags.com"
+
+#define FIREBASE_DOMAIN         @"f985d.app.goo.gl"
+#define FIREBASE_APPLINK        @"http://www.nmags.com/"
+#define FIREBASE_APPSTOREID     @"1242221556"
+
+#define FIREBASE_ANDROID_PACKAGENAME    @"main.negotiator"
+#define FIREBASE_ANDROID_VERSION    @"14"
+
+#define DEBUG_ENV	
+
+#ifdef DEBUG_ENV
+#   define LOG(fmt, ...) NSLog((@"version %@  %s [Line %d] " fmt), VERSION_NUMBER, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define LOG(...)
+#endif
+
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)

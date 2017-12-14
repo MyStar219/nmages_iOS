@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CouponsEntity" representedClassName="CouponsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyThumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conditions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPerson" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponFullAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFavourite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRedeemed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="largeImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maxQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reducedImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="smallImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suburb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MonitorCouponsEntity" representedClassName="MonitorCouponsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="couponId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="RegionsEntity" representedClassName="RegionsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="regionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CouponsEntity" positionX="-54" positionY="18" width="128" height="480"/>
+        <element name="MonitorCouponsEntity" positionX="-54" positionY="135" width="128" height="105"/>
+        <element name="RegionsEntity" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
